@@ -1,0 +1,85 @@
+{
+    "packages" : [
+      {
+        "id": 1,
+        "title": "Standard Plan",
+        "price": 3000,
+        "currency": "PKR",
+        "annualPercent": 10,
+        "setupCharges": 1200,
+        "students": 2000,
+        "branches": 2,
+        "features": [
+          { "name": "2 Branches", "available": true },
+          { "name": "2000 Students", "available": true },
+          { "name": "24×7 phone & email support", "available": true },
+          { "name": "Annual Discount (10%)", "available": true }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Premium Plan",
+        "price": 5000,
+        "currency": "PKR",
+        "annualPercent": 0,
+        "setupCharges": 1500,
+        "students": 5000,
+        "branches": 5,
+        "features": [
+          { "name": "5 Branches", "available": true },
+          { "name": "5000 Students", "available": true },
+          { "name": "Priority support", "available": true },
+          { "name": "Annual Discount (15%)", "available": false }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Premium Plan",
+        "price": 4000,
+        "currency": "PKR",
+        "annualPercent": 0,
+        "setupCharges": 1500,
+        "students": 5000,
+        "branches": 5,
+        "features": [
+          { "name": "5 Branches", "available": true },
+          { "name": "5000 Students", "available": true },
+          { "name": "Priority support", "available": true },
+          { "name": "Annual Discount (15%)", "available": false }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Premium Plan",
+        "price": 5000,
+        "currency": "PKR",
+        "annualPercent": 0,
+        "setupCharges": 1500,
+        "students": 5000,
+        "branches": 5,
+        "features": [
+          { "name": "5 Branches", "available": true },
+          { "name": "5000 Students", "available": true },
+          { "name": "Priority support", "available": true },
+          { "name": "Annual Discount (15%)", "available": false }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Premium Plan",
+        "price": 5000,
+        "currency": "PKR",
+        "annualPercent": 0,
+        "setupCharges": 1500,
+        "students": 5000,
+        "branches": 5,
+        "features": [
+          { "name": "5 Branches", "available": true },
+          { "name": "5000 Students", "available": true },
+          { "name": "Priority support", "available": true },
+          { "name": "Annual Discount (15%)", "available": false }
+        ]
+      }
+    ]
+
+}
