@@ -24,7 +24,7 @@ const ECommunity = () => {
           insights, and resources to empower learning and growth.
         </motion.p>
         <motion.a
-          href="https://your-ecommunity-url.com"
+          href="https://blog.education.com/category/for-teachers/"
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.1 }}
