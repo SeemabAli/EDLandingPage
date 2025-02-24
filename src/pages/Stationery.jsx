@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { FaPen, FaBook, FaPencilRuler, FaEraser, FaPaintBrush, FaClipboard, FaPlus, FaMinus } from "react-icons/fa";
+import { FaPen, FaBook, FaPencilRuler, FaEraser, FaPaintBrush, FaClipboard, FaPlus, FaMinus, FaTrash } from "react-icons/fa";
 import { motion } from "framer-motion";
 import jsPDF from "jspdf";
 import "jspdf-autotable";
@@ -48,6 +48,9 @@ const StationeryPage = () => {
       return [...prevCart, { ...item, quantity }];
     });
   };
+  const removeFromCart = (id) => {
+    setCart((prevCart) => prevCart.filter((item) => item.id !== id));
+  };
 
   const confirmOrder = () => {
     if (cart.length === 0) {
@@ -81,7 +84,6 @@ ${tableFooter}
 Looking forward to your prompt response.
 
 Best regards,  
-*EBridge Team*
   `;
 
     // Encode the message properly to prevent truncation
@@ -211,9 +213,25 @@ Best regards,
 
 
       {showOrderForm && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg w-96">
-            <h3 className="text-lg font-bold mb-4 ">Submit Your Order</h3>
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 px-4">
+          <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+            <h3 className="text-lg font-bold mb-4">Submit Your Order</h3>
+            <div className="bg-gray-100 p-4 rounded-lg mb-4">
+              <h4 className="text-md font-semibold mb-2">Demand</h4>
+              <div className="max-h-40 overflow-y-auto">
+                {cart.map((item) => (
+                  <div key={item.id} className="flex justify-between items-center border-b pb-1 mb-1">
+                    <span>{item.title}</span>
+                    <div className="flex items-center gap-2">
+                      <span className="font-semibold">x{item.quantity}</span>
+                      <button onClick={() => removeFromCart(item.id)} className="text-red-500 hover:text-red-700">
+                        <FaTrash />
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
             <input type="text" placeholder="Full Name" className="w-full border p-2 mt-4 rounded" value={customerInfo.fullName} onChange={(e) => setCustomerInfo({ ...customerInfo, fullName: e.target.value })} required />
             <input type="text" placeholder="Contact Number" className="w-full border p-2 mt-2 rounded" value={customerInfo.contact} onChange={(e) => setCustomerInfo({ ...customerInfo, contact: e.target.value })} required />
             <button onClick={confirmOrder} disabled={!isValidOrder()} className={`w-full py-2 mt-4 rounded-lg ${isValidOrder() ? "bg-green-500 hover:bg-[#3E6899] text-white" : "bg-[#6A9DD7] text-white cursor-not-allowed hover:bg-[#3E6899]"}`}>Confirm Order</button>
