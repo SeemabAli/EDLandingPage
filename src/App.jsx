@@ -7,10 +7,12 @@ import Stationery from "./pages/Stationery";
 import ECommunity from "./pages/ECommunity";
 import RequestDemo from "./pages/RequestDemo";
 import ServicesPage from "./pages/Services";
+import ScrollToTop from "./components/ScrollToTop"; // Import the component
 
 const App = () => {
   return (
     <Router>
+      <ScrollToTop /> {/* Ensure this is inside Router */}
       <Navbar />
       <div className="pt-[70px] min-h-screen">
         <Routes>
@@ -22,7 +24,6 @@ const App = () => {
           <Route path="/request-demo" element={<RequestDemo />} />
         </Routes>
       </div>
-
       <Footer />
     </Router>
   );
