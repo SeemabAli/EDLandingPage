@@ -21,6 +21,7 @@ const Banner2 = () => {
             </p>
             <a
               href="https://blog.education.com/category/for-teachers/"
+              target="_blank"
               className="primary-btn !mt-8"
             >
               Join Now
