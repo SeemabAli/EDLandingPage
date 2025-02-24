@@ -54,7 +54,7 @@ const Services = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, ease: "anticipate" }}
-          className="text-lg text-primary max-w-2xl mx-auto mb-10"
+          className="text-lg max-w-2xl mx-auto mb-10"
         >
           We offer a diverse range of digital solutions to drive your business success.
         </motion.p>
