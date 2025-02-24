@@ -1,8 +1,9 @@
 import React from "react";
 import BannerPng from "../../assets/education.png";
 import { GrUserExpert } from "react-icons/gr";
-import { MdOutlineAccessTime } from "react-icons/md";
-import { FaBookReader } from "react-icons/fa";
+import { MdOutlineAccessTime, MdQrCodeScanner, MdEventNote } from "react-icons/md";
+import { FaBookReader, FaUserTie, FaChalkboardTeacher, FaUserFriends } from "react-icons/fa";
+import { BiNotepad } from "react-icons/bi";
 import { FadeUp } from "../../utility/animation.jsx";
 import { motion } from "framer-motion";
 
@@ -20,7 +21,7 @@ const Banner = () => {
               transition={{ duration: 0.5 }}
               className="text-3xl md:text-4xl font-bold !leading-snug"
             >
-              Smart School Management – Streamline Attendance, Exams & Student Records While Keeping Parents & Teachers Connected!
+              Smart School Management – Integrated Apps for Teachers, Admin, and Parents with Advanced Features!
             </motion.h1>
             <div className="flex flex-col gap-6">
               <motion.div
@@ -30,8 +31,18 @@ const Banner = () => {
                 viewport={{ once: true }}
                 className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-white duration-300 hover:shadow-2xl"
               >
-                <FaBookReader className="text-2xl" />
-                <p className="text-lg">10,000+ Courses</p>
+                <FaUserTie className="text-2xl" />
+                <p className="text-lg">Dedicated Admin, Teacher & Parent Apps</p>
+              </motion.div>
+              <motion.div
+                variants={FadeUp(0.3)}
+                initial="initial"
+                whileInView={"animate"}
+                viewport={{ once: true }}
+                className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-white duration-300 hover:shadow-2xl"
+              >
+                <MdQrCodeScanner className="text-2xl" />
+                <p className="text-lg">QR-Based Attendance System</p>
               </motion.div>
               <motion.div
                 variants={FadeUp(0.4)}
@@ -40,8 +51,18 @@ const Banner = () => {
                 viewport={{ once: true }}
                 className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-white duration-300 hover:shadow-2xl"
               >
-                <GrUserExpert className="text-2xl" />
-                <p className="text-lg">Expert Instruction</p>
+                <MdEventNote className="text-2xl" />
+                <p className="text-lg">Leave Application System</p>
+              </motion.div>
+              <motion.div
+                variants={FadeUp(0.5)}
+                initial="initial"
+                whileInView={"animate"}
+                viewport={{ once: true }}
+                className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-white duration-300 hover:shadow-2xl"
+              >
+                <BiNotepad className="text-2xl" />
+                <p className="text-lg">Daily Diary & Timetable Management</p>
               </motion.div>
               <motion.div
                 variants={FadeUp(0.6)}
@@ -50,8 +71,18 @@ const Banner = () => {
                 viewport={{ once: true }}
                 className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-white duration-300 hover:shadow-2xl"
               >
-                <MdOutlineAccessTime className="text-2xl" />
-                <p className="text-lg">Lifetime Access</p>
+                <FaChalkboardTeacher className="text-2xl" />
+                <p className="text-lg">Exam & Test Scheduling</p>
+              </motion.div>
+              <motion.div
+                variants={FadeUp(0.7)}
+                initial="initial"
+                whileInView={"animate"}
+                viewport={{ once: true }}
+                className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-white duration-300 hover:shadow-2xl"
+              >
+                <FaUserFriends className="text-2xl" />
+                <p className="text-lg">Daily Student Progress Reports for Parents</p>
               </motion.div>
             </div>
           </div>
@@ -64,7 +95,7 @@ const Banner = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
             src={BannerPng}
-            alt=""
+            alt="School Management System"
             className="w-[350px] md:max-w-[450px] object-cover drop-shadow"
           />
         </div>
