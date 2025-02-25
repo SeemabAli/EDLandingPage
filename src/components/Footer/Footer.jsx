@@ -1,5 +1,5 @@
-import React from "react";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa6";
 import { HiLocationMarker } from "react-icons/hi";
 import { MdComputer } from "react-icons/md";
 
@@ -17,19 +17,19 @@ const Footer = () => {
                 <p className="">E-Bridge</p>
               </div>
               <p>
-                E-Bridge is your ultimate educational hub! From insightful blogs to school management and essential learning resources, we empower students, teachers, and institutions to thrive in the digital era.
+                E-Bridge empowers students, teachers, and institutions with blogs, school management, and learning resources for the digital era.
               </p>
               <div className="flex items-center justify-start gap-5 !mt-6">
-                <a href="#" className="hover:text-secondary duration-200">
+                <a href="/contact" className="hover:text-secondary duration-200">
                   <HiLocationMarker className="text-3xl" />
                 </a>
-                <a href="#" className="hover:text-secondary duration-200">
-                  <FaInstagram className="text-3xl" />
+                <a href="tel:+923136588108" className="hover:text-secondary duration-200">
+                  <FaPhone className="text-2xl" />
                 </a>
-                <a href="#" className="hover:text-secondary duration-200">
+                <a href="https://www.facebook.com/tssolutionspk" target="blank" className="hover:text-secondary duration-200">
                   <FaFacebook className="text-3xl" />
                 </a>
-                <a href="#" className="hover:text-secondary duration-200">
+                <a href="https://www.linkedin.com/company/total-soft-solutions-pk" target="blank" className="hover:text-secondary duration-200">
                   <FaLinkedin className="text-3xl" />
                 </a>
               </div>
@@ -42,20 +42,9 @@ const Footer = () => {
                 </h1>
                 <ul className="flex flex-col gap-3">
                   <li><a href="#" className="hover:text-secondary duration-200">Home</a></li>
-                  <li><a href="#" className="hover:text-secondary duration-200">About</a></li>
-                  <li><a href="#" className="hover:text-secondary duration-200">Services</a></li>
-                  <li><a href="#" className="hover:text-secondary duration-200">Login</a></li>
-                </ul>
-              </div>
-              <div className="py-8 px-4">
-                <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-5">
-                  Resources
-                </h1>
-                <ul className="flex flex-col gap-3">
-                  <li><a href="#" className="hover:text-secondary duration-200">Blogs</a></li>
-                  <li><a href="#" className="hover:text-secondary duration-200">E-Community</a></li>
-                  <li><a href="#" className="hover:text-secondary duration-200">Stationery</a></li>
-                  <li><a href="#" className="hover:text-secondary duration-200">Support</a></li>
+                  <li><a href="/services" className="hover:text-secondary duration-200">Services</a></li>
+                  <li><a href="/e-community" className="hover:text-secondary duration-200">E-Community</a></li>
+                  <li><a href="/stationery" className="hover:text-secondary duration-200">Stationery</a></li>
                 </ul>
               </div>
               <div className="py-8 px-4">
@@ -63,10 +52,9 @@ const Footer = () => {
                   Company Links
                 </h1>
                 <ul className="flex flex-col gap-3">
-                  <li><a href="#" className="hover:text-secondary duration-200">Terms of Service</a></li>
-                  <li><a href="#" className="hover:text-secondary duration-200">Privacy Policy</a></li>
-                  <li><a href="#" className="hover:text-secondary duration-200">Careers</a></li>
-                  <li><a href="#" className="hover:text-secondary duration-200">Contact Us</a></li>
+                  <li><a href="/t&c" className="hover:text-secondary duration-200">Terms & Conditions</a></li>
+                  <li><a href="/privacypolicy" className="hover:text-secondary duration-200">Privacy Policy</a></li>
+                  <li><a href="/contact" className="hover:text-secondary duration-200">Contact Us</a></li>
                 </ul>
               </div>
             </div>

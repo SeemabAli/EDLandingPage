@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const whatsappNumber = "+923136588108"; // Replace with actual WhatsApp number

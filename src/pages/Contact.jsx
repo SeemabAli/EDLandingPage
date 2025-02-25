@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
@@ -20,11 +20,17 @@ const ContactPage = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
+    const emailParams = {
+      user_name: formData.name,
+      user_email: formData.email,
+      message: formData.message,
+    };
+
     emailjs
       .send(
         "service_lvnkxlk", // Replace with your EmailJS Service ID
         "template_04rbo7b", // Replace with your EmailJS Template ID
-        formData,
+        emailParams,
         "RS5vkAtL0Y5yzzY2a" // Replace with your EmailJS Public Key
       )
       .then(
@@ -32,7 +38,7 @@ const ContactPage = () => {
           setSuccess("Message sent successfully!");
           setFormData({ name: "", email: "", message: "" });
         },
-        (error) => {
+        () => {
           setSuccess("Failed to send message. Try again.");
         }
       )
@@ -72,13 +78,25 @@ const ContactPage = () => {
                 <p className="text-gray-600">tssolutionspk@gmail.com</p>
               </div>
             </div>
-            <div className="flex items-center gap-4 bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition">
-              <FaMapMarkerAlt className="text-primary text-2xl" />
-              <div>
+            <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition">
+              <div className="flex items-center gap-3 mb-2">
+                <FaMapMarkerAlt className="text-primary text-2xl" />
                 <h3 className="text-lg font-semibold">Location</h3>
-                <p className="text-gray-600">Chakwal, Punjab, Pakistan</p>
+              </div>
+              <p className="text-gray-600 mb-4">Chakwal, Punjab, Pakistan</p>
+              <div className="w-full overflow-hidden rounded-lg shadow-lg border border-gray-200">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.5737702269275!2d72.86937358737454!3d32.909435809171754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39205dc030152627%3A0x62a63802edd43a7d!2sTotal%20Soft%20Solutions!5e0!3m2!1sen!2s!4v1740480618614!5m2!1sen!2s"
+                  width="100%"
+                  height="300"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </div>
+
           </motion.div>
 
           {/* Contact Form */}
