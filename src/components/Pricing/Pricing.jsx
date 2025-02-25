@@ -9,7 +9,7 @@ const Pricing = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3000/packages") // ✅ Fetching from JSON server
+    fetch("http://localhost:4000/api/v1/packages") // ✅ Fetching from JSON server
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch pricing plans");

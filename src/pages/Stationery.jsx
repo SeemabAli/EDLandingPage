@@ -100,7 +100,7 @@ Best regards,
   return (
     <section className="min-h-screen relative">
       <div className="fixed top-16 left-1/2 transform -translate-x-1/2 z-10 px-6 justify-center w-full max-w-[1200px] mx-auto lg:flex hidden">
-        <div className="flex gap-4 bg-[#D4E0ED] p-2 rounded-lg">
+        <div className="flex gap-4 bg-[#D4E0ED] p-2 pt-3 rounded-lg">
           {stationeryItems.map(({ id, title, icon: Icon }) => (
             <button
               key={id}

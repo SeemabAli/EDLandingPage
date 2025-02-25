@@ -7,6 +7,7 @@ import { MdCampaign } from "react-icons/md";
 import { FaFileAlt, FaChalkboardTeacher, FaComments } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const services = [
   {
@@ -72,6 +73,7 @@ const ServicesPage = () => {
   const sectionRefs = useRef({});
   const [activeService, setActiveService] = useState(services[0].id);
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -121,7 +123,7 @@ const ServicesPage = () => {
   return (
     <section className="bg-white">
       <div className="fixed top-16 left-1/2 transform -translate-x-1/2 z-10 bg-white px-6 justify-center w-full max-w-[1200px] mx-auto lg:flex hidden">
-        <div className="flex gap-4 bg-[#D4E0ED] p-2 rounded-lg">
+        <div className="flex gap-4 bg-[#D4E0ED] p-2 pt-3 rounded-lg">
           {services.map(({ id, title, icon: Icon }) => (
             <button
               key={id}
@@ -154,20 +156,19 @@ const ServicesPage = () => {
               <p className="text-gray-600 mt-4 max-w-3xl mx-auto lg:mx-0">{content}</p>
               <p className="text-lg font-semibold text-[#3E6899] mt-4">Pricing: {price}</p>
               <div className="flex flex-col lg:flex-row gap-4 mt-4 items-center">
-                <a
-                  href="https://wa.me/yourwhatsapplink"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  onClick={() => id === 4 ? navigate("/stationery") : navigate("/pricing")}
                   className="bg-[#3E6899] text-white font-bold py-2 px-6 rounded-lg shadow-md hover:bg-[#7BB661] transition-all flex items-center gap-2"
                 >
                   <FaFileAlt /> Buy Now
-                </a>
-                <a
-                  href="https://yourcontactlink"
+                </button>
+
+                <button
+                  onClick={() => navigate("/contact")}  // 🔥 Navigates to the Contact page
                   className="bg-[#7BB661] text-white font-bold py-2 px-6 rounded-lg shadow-md hover:bg-[#3E6899] transition-all flex items-center gap-2"
                 >
                   <FaComments /> Talk to Us
-                </a>
+                </button>
               </div>
             </div>
           </motion.div>

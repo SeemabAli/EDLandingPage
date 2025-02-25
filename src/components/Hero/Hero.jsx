@@ -30,7 +30,7 @@ const Hero = () => {
             Your Complete <br />
             <span className="text-secondary hover:text-primary">Education Ecosystem</span>
           </motion.h1>
-          <p className="text-lg text-gray-700">
+          <p className="text-lg text-gray-700 justify-center">
             Transforming education with an all-in-one platform. Our <span className="font-semibold">School Management System</span> offers a seamless experience with dedicated apps for <span className="font-semibold">Admins, Teachers, and Parents</span>. Manage <span className="font-semibold">QR-based attendance, leave applications, daily progress tracking, exams, timetables, digital diaries</span>, and more. Additionally, explore our <span className="font-semibold">e-learning community, online stationery store, and powerful school website</span>—all in one place!
           </p>
           <motion.div
@@ -50,7 +50,7 @@ const Hero = () => {
         </div>
 
         {/* Hero Image */}
-        <div className="flex justify-center items-center relative">
+        <div className="flex p-4 justify-center items-center relative">
           <motion.img
             initial={{ x: 50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}

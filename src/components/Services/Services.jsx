@@ -2,7 +2,7 @@ import { RiComputerLine } from "react-icons/ri";
 import { CiMobile3 } from "react-icons/ci";
 import { TbWorldWww } from "react-icons/tb";
 import { GiPencilRuler } from "react-icons/gi";
-import { BiBell } from "react-icons/bi";
+import { BiBell, BiSupport } from "react-icons/bi";
 import { BsClipboardData } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
@@ -15,6 +15,7 @@ const services = [
   { id: 5, title: "Marketing", icon: <BiBell />, delay: 0.5 },
   { id: 6, title: "Composing", icon: <BsClipboardData />, delay: 0.6 },
   { id: 7, title: "IT Consultancy", icon: <BsClipboardData />, delay: 0.7 },
+  { id: 7, title: "24/7 Support", icon: <BiSupport />, delay: 0.8 },
 ];
 
 const containerVariants = {
