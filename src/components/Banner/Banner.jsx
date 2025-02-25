@@ -1,18 +1,16 @@
-import React from "react";
 import BannerPng from "../../assets/education.png";
 import { MdQrCodeScanner, MdEventNote } from "react-icons/md";
 import { FaUserTie, FaChalkboardTeacher, FaUserFriends } from "react-icons/fa";
 import { BiNotepad } from "react-icons/bi";
 import { motion } from "framer-motion";
-import { SlideLeft } from "../../utility/animation.jsx";
 
 const FeaturesData = [
-  { id: 1, title: "Admin, Teacher & Parent Apps", desc: "Dedicated apps for streamlined management.", icon: <FaUserTie />, bgColor: "#0063ff", delay: 0.3 },
-  { id: 2, title: "QR-Based Attendance", desc: "Smart attendance tracking using QR codes.", icon: <MdQrCodeScanner />, bgColor: "#73bc00", delay: 0.6 },
-  { id: 3, title: "Leave Application System", desc: "Easily manage leave requests online.", icon: <MdEventNote />, bgColor: "#fa6400", delay: 0.9 },
-  { id: 4, title: "Daily Diary & Timetable", desc: "Stay updated with class schedules.", icon: <BiNotepad />, bgColor: "#fe6baa", delay: 1.2 },
-  { id: 5, title: "Exam & Test Scheduling", desc: "Plan and manage exams effortlessly.", icon: <FaChalkboardTeacher />, bgColor: "#ff9800", delay: 1.5 },
-  { id: 6, title: "Student Progress Reports", desc: "Daily insights for parents.", icon: <FaUserFriends />, bgColor: "#8e44ad", delay: 1.8 },
+  { id: 1, title: "Admin, Teacher & Parent Apps", desc: "Dedicated apps for streamlined management.", icon: <FaUserTie />, bgColor: "#0063ff", delay: 0.1 },
+  { id: 1, title: "QR-Based Attendance", desc: "Smart attendance tracking using QR codes.", icon: <MdQrCodeScanner />, bgColor: "#73bc00", delay: 0.2 },
+  { id: 3, title: "Leave Application System", desc: "Easily manage leave requests online.", icon: <MdEventNote />, bgColor: "#fa6400", delay: 0.3 },
+  { id: 4, title: "Daily Diary & Timetable", desc: "Stay updated with class schedules.", icon: <BiNotepad />, bgColor: "#fe6baa", delay: 0.4 },
+  { id: 5, title: "Exam & Test Scheduling", desc: "Plan and manage exams effortlessly.", icon: <FaChalkboardTeacher />, bgColor: "#ff9800", delay: 0.5 },
+  { id: 6, title: "Student Progress Reports", desc: "Daily insights for parents.", icon: <FaUserFriends />, bgColor: "#8e44ad", delay: 0.6 },
 ];
 
 const Banner = () => {
@@ -25,7 +23,7 @@ const Banner = () => {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
+            transition={{ duration: 0.3, ease: "easeInOut" }} // Faster animation
             src={BannerPng}
             alt="School Management System"
             className="w-[350px] md:max-w-[450px] object-cover drop-shadow"
@@ -37,7 +35,7 @@ const Banner = () => {
             initial={{ opacity: 0, scale: 0.5 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.1 }} // Faster animation
             className="text-3xl md:text-4xl font-bold leading-snug text-center md:text-left"
           >
             Smart School Management – Integrated Apps for Teachers, Admin, and Parents with Advanced Features!
@@ -47,11 +45,11 @@ const Banner = () => {
             {FeaturesData.map((item) => (
               <motion.div
                 key={item.id}
-                variants={SlideLeft(item.delay)}
-                initial="hidden"
-                whileInView="visible"
+                initial={{ opacity: 0, x: -80 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="flex items-center gap-4 p-6 rounded-xl shadow-lg bg-white hover:shadow-xl transition duration-300"
+                transition={{ duration: 0.2, ease: "easeIn" }}
+                className="flex items-center gap-4 p-6 rounded-xl shadow-lg bg-white hover:shadow-xl transition duration-200 transform hover:scale-105"
               >
                 <div
                   style={{ backgroundColor: item.bgColor }}
