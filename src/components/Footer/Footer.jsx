@@ -1,93 +1,87 @@
 import React from "react";
-import { FaFacebook, FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
-import { motion } from "framer-motion";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { HiLocationMarker } from "react-icons/hi";
+import { MdComputer } from "react-icons/md";
+
 
 const Footer = () => {
   return (
-    <footer className="py-20 bg-[#D4E0ED]">
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        className="container"
-      >
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 md:gap-4">
-          {/* first section */}
-          <div className="space-y-4 max-w-[300px]">
-            <h1 className="text-2xl font-bold">E-bridge</h1>
-            <p className="text-dark2">
-              E-Bridge is your ultimate educational hub! From insightful blogs to school management and essential learning resources, we empower students, teachers, and institutions to thrive in the digital era.
-            </p>
-          </div>
-          {/* second section */}
-          <div className="grid grid-cols-2 gap-10">
-            <div className="space-y-4">
-              <h1 className="text-2xl font-bold">Services</h1>
-              <div className="text-dark2">
-                <ul className="space-y-2 text-lg">
-                  <li className="cursor-pointer hover:text-secondary duration-200">
-                    School Management System
-                  </li>
-                  <li className="cursor-pointer hover:text-secondary duration-200">
-                    E-Community
-                  </li>
-                  <li className="cursor-pointer hover:text-secondary duration-200">
-                    Stationery
-                  </li>
-                  <li className="cursor-pointer hover:text-secondary duration-200">
-                    Others
-                  </li>
+    <div className="bg-light rounded-t-3xl">
+      <div>
+        <div className="container">
+          <div className="grid md:grid-cols-4 md:gap-4 py-5 border-gray-300/10 text-black">
+            {/* brand info section */}
+            <div className="py-8 px-4 space-y-4">
+              <div className="text-2xl flex items-center gap-2 font-bold uppercase">
+                <MdComputer className="text-secondary text-4xl" />
+                <p className="">E-Bridge</p>
+              </div>
+              <p>
+                E-Bridge is your ultimate educational hub! From insightful blogs to school management and essential learning resources, we empower students, teachers, and institutions to thrive in the digital era.
+              </p>
+              <div className="flex items-center justify-start gap-5 !mt-6">
+                <a href="#" className="hover:text-secondary duration-200">
+                  <HiLocationMarker className="text-3xl" />
+                </a>
+                <a href="#" className="hover:text-secondary duration-200">
+                  <FaInstagram className="text-3xl" />
+                </a>
+                <a href="#" className="hover:text-secondary duration-200">
+                  <FaFacebook className="text-3xl" />
+                </a>
+                <a href="#" className="hover:text-secondary duration-200">
+                  <FaLinkedin className="text-3xl" />
+                </a>
+              </div>
+            </div>
+            {/* Footer Links  */}
+            <div className="grid grid-cols-2 md:grid-cols-3 md:col-span-3 md:ml-14">
+              <div className="py-8 px-4">
+                <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-5">
+                  Important Links
+                </h1>
+                <ul className="flex flex-col gap-3">
+                  <li><a href="#" className="hover:text-secondary duration-200">Home</a></li>
+                  <li><a href="#" className="hover:text-secondary duration-200">About</a></li>
+                  <li><a href="#" className="hover:text-secondary duration-200">Services</a></li>
+                  <li><a href="#" className="hover:text-secondary duration-200">Login</a></li>
+                </ul>
+              </div>
+              <div className="py-8 px-4">
+                <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-5">
+                  Resources
+                </h1>
+                <ul className="flex flex-col gap-3">
+                  <li><a href="#" className="hover:text-secondary duration-200">Blogs</a></li>
+                  <li><a href="#" className="hover:text-secondary duration-200">E-Community</a></li>
+                  <li><a href="#" className="hover:text-secondary duration-200">Stationery</a></li>
+                  <li><a href="#" className="hover:text-secondary duration-200">Support</a></li>
+                </ul>
+              </div>
+              <div className="py-8 px-4">
+                <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-5">
+                  Company Links
+                </h1>
+                <ul className="flex flex-col gap-3">
+                  <li><a href="#" className="hover:text-secondary duration-200">Terms of Service</a></li>
+                  <li><a href="#" className="hover:text-secondary duration-200">Privacy Policy</a></li>
+                  <li><a href="#" className="hover:text-secondary duration-200">Careers</a></li>
+                  <li><a href="#" className="hover:text-secondary duration-200">Contact Us</a></li>
                 </ul>
               </div>
             </div>
-            <div className="space-y-4">
-              <h1 className="text-2xl font-bold">Links</h1>
-              <div className="text-dark2">
-                <ul className="space-y-2 text-lg">
-                  <li className="cursor-pointer hover:text-secondary duration-200">
-                    Home
-                  </li>
-                  <li className="cursor-pointer hover:text-secondary duration-200">
-                    Services
-                  </li>
-                  <li className="cursor-pointer hover:text-secondary duration-200">
-                    About
-                  </li>
-                  <li className="cursor-pointer hover:text-secondary duration-200">
-                    Contact
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
-          {/* third section */}
-          <div className="space-y-4 max-w-[300px]">
-            <h1 className="text-2xl font-bold">Get In Touch</h1>
-            <div className="flex items-center">
-              <input
-                type="text"
-                placeholder="Enter your email"
-                className="p-3 rounded-s-xl bg-white w-full py-4 focus:ring-0 focus:outline-none placeholder:text-dark2"
-              />
-              <button className="bg-primary text-white font-semibold py-4 px-6 rounded-e-xl">
-                Go
-              </button>
-            </div>
-            {/* social icons */}
-            <div className="flex space-x-6 py-3">
-              <a href="tel:+923136588108">
-                <FaPhoneAlt className="cursor-pointer hover:text-primary hover:scale-105 duration-200" />
-              </a>
-              <a href="https://www.facebook.com/tssolutionspk">
-                <FaFacebook className="cursor-pointer hover:text-primary hover:scale-105 duration-200" />
-              </a>
-              <a href="https://wa.me/+923136588108">
-                <FaWhatsapp className="cursor-pointer hover:text-primary hover:scale-105 duration-200" />
-              </a>
+          {/* copyright section  */}
+          <div>
+            <div className="text-center py-6 border-t-2 border-gray-800/10">
+              <span className="text-sm text-black/60">
+                @copyright 2024 Total Soft Solutions
+              </span>
             </div>
           </div>
         </div>
-      </motion.div>
-    </footer>
+      </div>
+    </div>
   );
 };
 
