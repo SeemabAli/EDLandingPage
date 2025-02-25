@@ -9,6 +9,8 @@ import RequestDemo from "./pages/RequestDemo";
 import ServicesPage from "./pages/Services";
 import ScrollToTop from "./components/ScrollToTop"; // Import the component
 import Pricing from "./components/Pricing/Pricing";
+import TermsAndConditions from "./pages/TOC";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 const App = () => {
   return (
@@ -24,6 +26,8 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/request-demo" element={<RequestDemo />} />
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/t&c" element={<TermsAndConditions />} />
+          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
         </Routes>
       </div>
       <Footer />
