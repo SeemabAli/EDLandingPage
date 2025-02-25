@@ -8,6 +8,7 @@ import ECommunity from "./pages/ECommunity";
 import RequestDemo from "./pages/RequestDemo";
 import ServicesPage from "./pages/Services";
 import ScrollToTop from "./components/ScrollToTop"; // Import the component
+import Pricing from "./components/Pricing/Pricing";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/e-community" element={<ECommunity />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/request-demo" element={<RequestDemo />} />
+          <Route path="/pricing" element={<Pricing />} />
         </Routes>
       </div>
       <Footer />
