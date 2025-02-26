@@ -6,7 +6,7 @@ const PrivacyPolicy = () => {
             <section className="mb-6">
                 <h2 className="text-xl font-semibold">1. Introduction</h2>
                 <p>
-                    Welcome to <strong>E-Bridge</strong>. This Privacy Policy explains how we collect, use, and protect your personal data in compliance with <strong>Pakistan’s Data Protection Framework</strong> and the <strong>Prevention of Electronic Crimes Act (PECA) 2016</strong>.
+                    Welcome to <strong>eBridgePK</strong>. This Privacy Policy explains how we collect, use, and protect your personal data in compliance with <strong>Pakistan’s Data Protection Framework</strong> and the <strong>Prevention of Electronic Crimes Act (PECA) 2016</strong>.
                 </p>
             </section>
 
@@ -82,7 +82,7 @@ const PrivacyPolicy = () => {
                 <p>
                     For any questions regarding this Privacy Policy, please contact us:
                 </p>
-                <p><strong>E-Bridge Support</strong></p>
+                <p><strong>eBridgePK Support</strong></p>
                 <p>Email: support@ebridge.com</p>
                 <p>Phone: +92 313 6588108</p>
             </section>

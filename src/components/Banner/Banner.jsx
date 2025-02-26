@@ -26,7 +26,7 @@ const Banner = () => {
             transition={{ duration: 0.3, ease: "easeInOut" }} // Faster animation
             src={BannerPng}
             alt="School Management System"
-            className="w-[350px] md:max-w-[450px] object-cover drop-shadow"
+            className="w-[550px] md:max-w-[450px] object-cover drop-shadow"
           />
         </div>
         {/* Banner Text & Features */}

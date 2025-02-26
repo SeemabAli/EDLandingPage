@@ -6,7 +6,7 @@ const TermsAndConditions = () => {
             <section className="mb-6">
                 <h2 className="text-xl font-semibold">1. Introduction</h2>
                 <p>
-                    Welcome to <strong>E-Bridge</strong>. These Terms and Conditions govern your use of our platform, including our educational blogs, school management system, and e-commerce services. By accessing or using our website, you agree to comply with these terms and all applicable laws of <strong>Pakistan</strong>.
+                    Welcome to <strong>eBridgePK</strong>. These Terms and Conditions govern your use of our platform, including our educational blogs, school management system, and e-commerce services. By accessing or using our website, you agree to comply with these terms and all applicable laws of <strong>Pakistan</strong>.
                 </p>
             </section>
 
@@ -22,7 +22,7 @@ const TermsAndConditions = () => {
             <section className="mb-6">
                 <h2 className="text-xl font-semibold">3. Content Usage and Intellectual Property</h2>
                 <ul className="list-disc ml-6">
-                    <li>All content, including blogs, software, and digital resources, is the property of <strong>E-Bridge</strong> and protected by copyright laws in Pakistan.</li>
+                    <li>All content, including blogs, software, and digital resources, is the property of <strong>eBridgePK</strong> and protected by copyright laws in Pakistan.</li>
                     <li>Users may not copy, distribute, or use content without prior written permission.</li>
                     <li>Plagiarism or misuse of content may lead to account suspension and legal consequences.</li>
                 </ul>
@@ -33,7 +33,7 @@ const TermsAndConditions = () => {
                 <ul className="list-disc ml-6">
                     <li>Purchases must comply with Pakistan’s Consumer Protection Laws.</li>
                     <li>Refund and return policies apply only to eligible products as stated on the purchase page.</li>
-                    <li>Users must ensure the security of their payment details, and <strong>E-Bridge</strong> is not liable for unauthorized transactions.</li>
+                    <li>Users must ensure the security of their payment details, and <strong>eBridgePK</strong> is not liable for unauthorized transactions.</li>
                 </ul>
             </section>
 
@@ -56,14 +56,14 @@ const TermsAndConditions = () => {
             <section className="mb-6">
                 <h2 className="text-xl font-semibold">7. Termination and Account Suspension</h2>
                 <p>
-                    <strong>E-Bridge</strong> reserves the right to suspend or terminate accounts violating these terms. Any legal violations may result in prosecution under Pakistan’s IT and Cybercrime Laws.
+                    <strong>eBridgePK</strong> reserves the right to suspend or terminate accounts violating these terms. Any legal violations may result in prosecution under Pakistan’s IT and Cybercrime Laws.
                 </p>
             </section>
 
             <section className="mb-6">
                 <h2 className="text-xl font-semibold">8. Liability and Disclaimer</h2>
                 <p>
-                    We strive to provide accurate information but do not guarantee error-free content. Users are responsible for their own decisions based on provided content. <strong>E-Bridge</strong> is not liable for any loss or damage resulting from misuse of information.
+                    We strive to provide accurate information but do not guarantee error-free content. Users are responsible for their own decisions based on provided content. <strong>eBridgePK</strong> is not liable for any loss or damage resulting from misuse of information.
                 </p>
             </section>
 
@@ -86,7 +86,7 @@ const TermsAndConditions = () => {
                 <p>
                     For any queries regarding these Terms, please contact us at:
                 </p>
-                <p><strong>E-Bridge Support</strong></p>
+                <p><strong>eBridgePK Support</strong></p>
                 <p>Email: support@ebridge.com</p>
                 <p>Phone: +92 313 6588108</p>
             </section>

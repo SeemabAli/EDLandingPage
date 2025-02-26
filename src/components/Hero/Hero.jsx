@@ -9,7 +9,7 @@ const Hero = () => {
   const [showVideo, setShowVideo] = useState(false);
 
   return (
-    <section className="bg-light overflow-hidden relative">
+    <section className="bg-[#f7f7f7] overflow-hidden relative">
       <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[650px] py-14 md:py-24">
         {/* Brand Info */}
         <div className="flex flex-col justify-center relative z-20 space-y-10 text-center md:text-left">
@@ -25,7 +25,7 @@ const Hero = () => {
               animate="visible"
               className="text-primary uppercase font-thin text-lg"
             >
-              The Future of Education Starts Here!
+              Revolutionize Your Institution with Smart Digital Solutions!
             </motion.p>
             Your Complete <br />
             <span className="text-secondary hover:text-primary">Education Ecosystem</span>

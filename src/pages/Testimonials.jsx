@@ -2,31 +2,34 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 const TestimonialsData = [
     {
         id: 1,
-        name: "John Doe",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio.",
+        name: "Principal, XYZ School",
+        text: "eBridgePK transformed our school operations! From enrollment, attendance tracking, everything is effortless.",
         img: "https://picsum.photos/101/101",
+        size: "small"
     },
     {
         id: 2,
-        name: "Steve Smith",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio.",
+        name: "Admin, ABC College",
+        text: "Our teachers and parents love the real-time updates. The platform is truly a game-changer!",
         img: "https://picsum.photos/102/102",
+        size: "small"
     },
     {
         id: 3,
-        name: "Kristen",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio.",
-        img: "https://picsum.photos/104/104",
+        name: "Headmaster, LMN Academy",
+        text: "The automation features have significantly reduced our administrative workload. Highly recommended!",
+        img: "https://picsum.photos/103/103",
+        size: "small"
     },
     {
         id: 4,
-        name: "Ariana",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio.",
-        img: "https://picsum.photos/103/103",
+        name: "Coordinator, PQR Institute",
+        text: "The ease of use and efficiency of eBridgePK have been outstanding. Managing students never been this easy!",
+        img: "https://picsum.photos/104/104",
+        size: "small"
     },
 ];
 
@@ -76,7 +79,7 @@ const Testimonial = () => {
                         OUR TESTIMONIALS
                     </h1>
                     <p className="font-semibold text-3xl text-dark">
-                        What Our Clients Say About Us
+                        What Educators Say About Us
                     </p>
                 </div>
                 {/* Testimonial Cards Section */}
@@ -85,7 +88,7 @@ const Testimonial = () => {
                         {TestimonialsData.map((item) => {
                             return (
                                 <div key={item.id}>
-                                    <div className="flex flex-col gap-4 p-8 shadow-lg mx-4 rounded-xl bg-white border border-gray-200 hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
+                                    <div className={`flex flex-col gap-4 p-8 shadow-lg mx-4 rounded-xl bg-white border border-gray-200 hover:shadow-xl transition-transform duration-300 hover:-translate-y-2 ${item.size === "large" ? "scale-105" : "scale-95"}`}>
                                         {/* Upper Section */}
                                         <div className="flex justify-start items-center gap-5">
                                             <img

@@ -14,10 +14,10 @@ const Footer = () => {
             <div className="py-8 px-4 space-y-4">
               <div className="text-2xl flex items-center gap-2 font-bold uppercase">
                 <MdComputer className="text-secondary text-4xl" />
-                <p className="">E-Bridge</p>
+                <p className="">eBridgePK</p>
               </div>
               <p>
-                E-Bridge empowers students, teachers, and institutions with blogs, school management, and learning resources for the digital era.
+                From admissions to attendance, experience seamless school management with our all-in-one platform.
               </p>
               <div className="flex items-center justify-start gap-5 !mt-6">
                 <a href="/contact" className="hover:text-secondary duration-200">

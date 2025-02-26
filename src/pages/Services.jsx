@@ -13,59 +13,52 @@ const services = [
   {
     id: 1,
     title: "Software Development",
-    content: "We provide cutting-edge software development solutions tailored to meet the specific needs of businesses. Our team specializes in creating custom software applications, enterprise solutions, and cloud-based platforms. From requirement gathering to deployment and maintenance, we ensure a smooth and efficient software development cycle. Our developers work with the latest technologies, including AI, machine learning, and blockchain, to enhance productivity and security. Whether you need a CRM system, a project management tool, or automation software, we have the expertise to deliver robust and scalable solutions that align with your business goals.",
+    content: "We provide innovative digital solutions for the education sector through eBridgePK, a comprehensive platform designed to streamline school management. Our system offers seamless student enrollment, attendance tracking, and administrative automation, reducing workload and enhancing efficiency. From community-driven educational blogs to an integrated e-commerce section for stationery and a robust school management system, we ensure a smooth digital experience. Leveraging the latest technologies, including cloud computing and automation, we empower educators, students, and institutions with scalable, secure, and user-friendly solutions tailored to modern educational needs.",
     image: "https://plus.unsplash.com/premium_photo-1678565879444-f87c8bd9f241?w=500&auto=format&fit=crop&q=60",
     icon: RiComputerLine,
-    price: "$399 - $1799",
   },
   {
     id: 2,
     title: "Web Development",
-    content: "Our web development services focus on creating visually appealing, user-friendly, and high-performance websites. We specialize in both front-end and back-end development, ensuring that your website is fully responsive and optimized for all devices. Our developers use the latest frameworks, such as React, Angular, and Vue.js, to build interactive user interfaces. We also integrate e-commerce functionalities, CMS platforms, and API solutions. Whether you need a corporate website, an online store, or a custom web application, our team is equipped to bring your vision to life with modern design and seamless functionality.",
+    content: "Our web development services focus on delivering high-performance, user-friendly, and visually appealing websites for the education sector. We specialize in front-end and back-end development, ensuring that our platforms are fully responsive and optimized for all devices. Using modern technologies like React and Tailwind CSS, we build interactive and scalable solutions, including school management systems, educational blogging platforms, and e-commerce portals for stationery. Our expertise extends to API integration, real-time data synchronization, and cloud-based solutions, ensuring seamless functionality for educators, students, and administrators.",
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&auto=format&fit=crop&q=60",
     icon: TbWorldWww,
-    price: "$399 - $1799",
   },
   {
     id: 3,
     title: "Mobile Development",
-    content: "We design and develop high-quality mobile applications that run smoothly on both iOS and Android platforms. Our team follows best practices in mobile app development, ensuring a seamless user experience and robust performance. From native development with Swift and Kotlin to cross-platform solutions with Flutter and React Native, we tailor our approach based on your business needs. We focus on creating intuitive user interfaces, implementing secure payment gateways, and optimizing app performance. Whether you need an e-commerce app, a booking platform, or a social networking app, we turn your ideas into reality with state-of-the-art mobile solutions.",
+    content: "We develop high-quality mobile applications designed to enhance the education sector. Our apps provide seamless experiences for students, teachers, and administrators, ensuring real-time communication, attendance tracking, e-learning, and school management functionalities. We specialize in both native (Swift, Kotlin) and cross-platform (React Native, Flutter) development, ensuring optimal performance across iOS and Android. Our solutions integrate secure payment gateways, cloud storage, and interactive UI components, making education more accessible and efficient. Whether you need a school app, an e-learning platform, or an educational community app, we turn ideas into powerful, user-friendly mobile solutions.",
     image: "https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?w=500&auto=format&fit=crop&q=60",
     icon: CiMobile3,
-    price: "$399 - $1799",
   },
   {
     id: 4,
     title: "Order Stationery",
-    content: "Our online stationery store offers a wide range of educational and office supplies. From notebooks, pens, and art supplies to office essentials like printers and paper, we provide high-quality products at competitive prices. Our platform is designed for seamless browsing and ordering, making it easy for students, teachers, and professionals to find what they need. We also offer bulk ordering options for schools and businesses, ensuring timely delivery and excellent customer service. Our goal is to make stationery shopping convenient and affordable for everyone, with regular discounts and special deals on essential items.",
+    content: "Our online stationery store offers a comprehensive range of educational and office supplies, making it easy for students, teachers, and professionals to find what they need. From notebooks, pens, and art supplies to school essentials and office equipment, we provide high-quality products at competitive prices. Our seamless e-commerce platform ensures smooth browsing, secure payments, and fast delivery. We also offer bulk ordering options for schools and businesses, ensuring cost-effective solutions and timely shipments. With exclusive deals, seasonal discounts, and top-notch customer support, we aim to make stationery shopping effortless and affordable for everyone.",
     image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=500&auto=format&fit=crop&q=60",
     icon: GiPencilRuler,
-    price: "$399 - $1799",
   },
   {
     id: 5,
     title: "Marketing",
-    content: "We provide comprehensive digital marketing services to help businesses grow their online presence. Our strategies include SEO optimization, social media marketing, content creation, pay-per-click advertising, and email marketing campaigns. Our team works closely with clients to develop customized marketing plans that align with their brand identity and target audience. We use advanced analytics and data-driven insights to measure campaign performance and optimize strategies for maximum ROI. Whether you're a startup looking to build brand awareness or an established company aiming to increase conversions, our marketing solutions ensure long-term success.",
+    content: "We provide comprehensive digital marketing solutions to help educational institutions and businesses enhance their online presence. Our services include SEO optimization, social media marketing, content creation, targeted advertising, and email campaigns tailored to the education sector and e-commerce industry. We craft customized marketing strategies that align with your brand identity and audience, leveraging data-driven insights to maximize engagement and conversions. Whether you're an educational platform, a stationery store, or a service provider, our expertise ensures increased visibility, lead generation, and long-term growth in the digital landscape.",
     image: "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?w=500&auto=format&fit=crop&q=60",
     icon: MdCampaign,
-    price: "$399 - $1799",
   },
   {
     id: 6,
     title: "Composing",
-    content: "Our professional composing services cater to individuals and businesses that require high-quality document formatting and content structuring. We specialize in composing resumes, business reports, academic papers, legal documents, and official letters. Our team ensures that all documents are formatted according to industry standards, with precise alignment, font styles, and spacing. We also offer proofreading and editing services to enhance readability and eliminate errors. Whether you need a well-structured business proposal or an academic thesis, our experts are here to help you create professional and polished documents.",
+    content: "We provide professional composing services for students, educators, and businesses, ensuring high-quality document formatting and content structuring. Our expertise includes resumes, academic papers, business reports, legal documents, and official letters. We follow industry standards for formatting, ensuring precise alignment, font consistency, and readability. Additionally, we offer proofreading and editing services to enhance clarity and eliminate errors. Whether you need a well-structured thesis, a professional business proposal, or an official document, our team ensures that your content is polished, professional, and impactful.",
     image: "https://images.unsplash.com/photo-1605379399642-870262d3d051?w=500&auto=format&fit=crop&q=60",
     icon: FaFileAlt,
-    price: "$399 - $1799",
   },
   {
     id: 7,
     title: "IT Consultancy",
-    content: "Our IT consultancy services help businesses optimize their technology infrastructure and improve efficiency. We provide expert guidance on IT strategy, cloud solutions, cybersecurity, network management, and software implementation. Our consultants work closely with clients to understand their business objectives and recommend cost-effective solutions that enhance productivity. We also assist with system upgrades, data migration, and IT training to ensure seamless transitions. Whether you're a small business looking to scale or a large enterprise aiming to streamline operations, our IT consultancy services provide the technical expertise needed to stay ahead in a competitive market.",
+    content: "Our IT consultancy services empower educational institutions and businesses to optimize their digital infrastructure and enhance operational efficiency. We offer expert guidance on IT strategy, cloud solutions, cybersecurity, network management, and software integration. Our team collaborates closely with clients to understand their unique requirements and recommend cost-effective, scalable solutions. We also assist with system upgrades, data migration, and IT training, ensuring seamless digital transformation. Whether you're a school, university, or enterprise, our consultancy services provide the technical expertise needed to streamline operations and drive success in the evolving digital landscape.",
     image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=500&auto=format&fit=crop&q=60",
 
     icon: FaChalkboardTeacher,
-    price: "$399 - $1799",
   },
 ];
 
@@ -137,7 +130,7 @@ const ServicesPage = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 lg:mt-20 mt-6 flex flex-col items-center justify-center">
+      <div className="container mx-auto px-4 lg:mt-20 flex flex-col items-center justify-center">
         {services.map(({ id, title, content, image, price }) => (
           <motion.div
             key={id}
@@ -154,7 +147,6 @@ const ServicesPage = () => {
             <div className="lg:w-1/2">
               <h2 className="text-3xl font-bold text-gray-900">{title}</h2>
               <p className="text-gray-600 mt-4 max-w-3xl mx-auto lg:mx-0">{content}</p>
-              <p className="text-lg font-semibold text-[#3E6899] mt-4">Pricing: {price}</p>
               <div className="flex flex-col lg:flex-row gap-4 mt-4 items-center">
                 <button
                   onClick={() => id === 4 ? navigate("/stationery") : navigate("/pricing")}

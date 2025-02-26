@@ -31,7 +31,7 @@ const Navbar = () => {
           className="font-bold text-xl hover:text-secondary transition"
           onClick={closeMenu}
         >
-          E-Bridge
+          eBridgePK
         </Link>
 
         {/* Desktop Menu */}

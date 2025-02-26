@@ -5,13 +5,50 @@ import jsPDF from "jspdf";
 import "jspdf-autotable";
 
 const stationeryItems = [
-  { id: 1, title: "Notebooks", icon: FaBook, description: "High-quality notebooks for students and professionals.", image: "https://plus.unsplash.com/premium_photo-1677187301444-fd793e33e8d7?q=80&w=2123&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { id: 2, title: "Pens & Pencils", icon: FaPen, description: "A variety of pens and pencils for smooth writing.", image: "https://images.unsplash.com/photo-1518826778770-a729fb53327c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { id: 3, title: "Rulers & Scales", icon: FaPencilRuler, description: "Precision rulers and scales for accurate measurements.", image: "https://images.unsplash.com/photo-1529651795107-e5a141e34843?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { id: 4, title: "Erasers & Sharpeners", icon: FaEraser, description: "Top-quality erasers and sharpeners for everyday use.", image: "https://images.unsplash.com/photo-1441034281545-78296c3a6934?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { id: 5, title: "Paint & Brushes", icon: FaPaintBrush, description: "Premium colors and brushes for artistic creations.", image: "https://images.unsplash.com/photo-1499892477393-f675706cbe6e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { id: 6, title: "Clipboards & Files", icon: FaClipboard, description: "Organize your documents with sturdy clipboards and files.", image: "https://plus.unsplash.com/premium_photo-1683309563529-05b8d9619e71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  {
+    id: 1,
+    title: "Notebooks",
+    icon: FaBook,
+    description: "Premium-quality notebooks designed for students, professionals, and creatives. From lined to blank pages, our collection ensures a smooth writing experience with durable binding and elegant designs.",
+    image: "https://plus.unsplash.com/premium_photo-1677187301444-fd793e33e8d7?q=80&w=2123&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    id: 2,
+    title: "Pens & Pencils",
+    icon: FaPen,
+    description: "A wide selection of high-quality pens and pencils to enhance your writing and creativity. From smooth gel pens to precise mechanical pencils, we offer options for every need.",
+    image: "https://images.unsplash.com/photo-1518826778770-a729fb53327c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    id: 3,
+    title: "Rulers & Scales",
+    icon: FaPencilRuler,
+    description: "Precision-engineered rulers and scales for students, engineers, and artists. Available in various sizes and materials for accurate measurements in studies and design projects.",
+    image: "https://images.unsplash.com/photo-1529651795107-e5a141e34843?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    id: 4,
+    title: "Erasers & Sharpeners",
+    icon: FaEraser,
+    description: "Essential stationery tools for clean corrections and precise sharpening. Our collection includes dust-free erasers and long-lasting sharpeners for an effortless writing experience.",
+    image: "https://images.unsplash.com/photo-1441034281545-78296c3a6934?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    id: 5,
+    title: "Paint & Brushes",
+    icon: FaPaintBrush,
+    description: "Unleash your creativity with our premium range of paints and brushes. From acrylics to watercolors, our artist-grade supplies are perfect for beginners and professionals alike.",
+    image: "https://images.unsplash.com/photo-1499892477393-f675706cbe6e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    id: 6,
+    title: "Clipboards & Files",
+    icon: FaClipboard,
+    description: "Stay organized with durable clipboards and file folders. Ideal for students, teachers, and office professionals, our collection ensures your documents remain neat and accessible.",
+    image: "https://plus.unsplash.com/premium_photo-1683309563529-05b8d9619e71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
 ];
+
 
 
 const StationeryPage = () => {
