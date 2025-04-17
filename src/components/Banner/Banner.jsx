@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const FeaturesData = [
   { id: 1, title: "Admin, Teacher & Parent Apps", desc: "Dedicated apps for streamlined management.", icon: <FaUserTie />, bgColor: "#0063ff", delay: 0.1 },
-  { id: 1, title: "QR-Based Attendance", desc: "Smart attendance tracking using QR codes.", icon: <MdQrCodeScanner />, bgColor: "#73bc00", delay: 0.2 },
+  { id: 2, title: "QR-Based Attendance", desc: "Smart attendance tracking using QR codes.", icon: <MdQrCodeScanner />, bgColor: "#73bc00", delay: 0.2 },
   { id: 3, title: "Leave Application System", desc: "Easily manage leave requests online.", icon: <MdEventNote />, bgColor: "#fa6400", delay: 0.3 },
   { id: 4, title: "Daily Diary & Timetable", desc: "Stay updated with class schedules.", icon: <BiNotepad />, bgColor: "#fe6baa", delay: 0.4 },
   { id: 5, title: "Exam & Test Scheduling", desc: "Plan and manage exams effortlessly.", icon: <FaChalkboardTeacher />, bgColor: "#ff9800", delay: 0.5 },

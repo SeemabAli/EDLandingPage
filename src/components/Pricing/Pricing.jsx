@@ -1,7 +1,13 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import {
+  BookmarkIcon,
+  BuildingOffice2Icon,
+  AcademicCapIcon,
+  CheckCircleIcon,
+} from "@heroicons/react/24/solid"; // Or /outline if you prefer that style
 
-const whatsappNumber = "+923136588108"; // Replace with actual WhatsApp number
+const whatsappNumber = "+923136588108";
 
 const Pricing = () => {
   const [pricingPlans, setPricingPlans] = useState([]);
@@ -9,7 +15,7 @@ const Pricing = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("http://192.168.100.111:4000/api/v1/packages") // ✅ Fetching from API
+    fetch(`${import.meta.env.VITE_API_BASE_URL}/software-packages`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch pricing plans");
@@ -46,26 +52,37 @@ const Pricing = () => {
               <h2 className="text-xl font-semibold mb-2 text-dark hover:text-[#7BB661] transition-colors duration-200">
                 {plan.title}
               </h2>
-              <p className="text-primary text-2xl font-bold mb-4">{plan.price} {plan.currency}</p>
+              <p className="text-primary text-2xl font-bold mb-4">{plan.price} PKR</p>
+
               <div className="w-full flex justify-center">
-                <ul className="text-gray-600 text-sm text-left mb-4 space-y-2 w-full max-w-xs">
-                  {[
-                    { name: "Setup Charges", value: plan.setupCharges, available: plan.setupCharges > 0 },
-                    { name: "Annual Discount", value: `${plan.annualDiscountPct}%`, available: plan.annualDiscountPct > 0 },
-                    { name: "Branches", value: plan.branches, available: plan.branches > 0 },
-                    { name: "Students", value: plan.students, available: plan.students > 0 },
-                    { name: "Support Included", value: "Yes", available: plan.hasSupport }
-                  ].map((feature, index) => (
-                    <li
-                      key={index}
-                      className={`font-medium flex items-center gap-2 ${feature.available ? "text-green-600" : "text-gray-400"}`}
-                    >
-                      <span className="w-5">{feature.available ? "✔" : "✖"}</span>
-                      <span>{feature.name}: {feature.value}</span>
+                <ul className="text-gray-600 text-sm text-left mb-4 space-y-3 w-full max-w-xs">
+                  {plan.setupCharges > 0 && (
+                    <li className="font-medium flex items-center gap-2">
+                      <BookmarkIcon className="w-4 h-4 text-primary" />
+                      <span>Setup Charges: {plan.setupCharges} PKR</span>
+                    </li>
+                  )}
+                  {plan.branches > 0 && (
+                    <li className="font-medium flex items-center gap-2">
+                      <BuildingOffice2Icon className="w-4 h-4 text-primary" />
+                      <span>Branches: {plan.branches}</span>
+                    </li>
+                  )}
+                  {plan.students > 0 && (
+                    <li className="font-medium flex items-center gap-2">
+                      <AcademicCapIcon className="w-4 h-4 text-primary" />
+                      <span>Students: {plan.students}</span>
+                    </li>
+                  )}
+                  {plan.features?.map((feature, idx) => (
+                    <li key={idx} className="font-medium flex items-center gap-2">
+                      <CheckCircleIcon className="w-4 h-4 text-primary" />
+                      <span>{feature}</span>
                     </li>
                   ))}
                 </ul>
               </div>
+
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: "spring", stiffness: 200 }}

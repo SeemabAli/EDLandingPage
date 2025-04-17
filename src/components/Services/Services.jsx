@@ -15,7 +15,7 @@ const services = [
   { id: 5, title: "Marketing", icon: <BiBell />, delay: 0.5 },
   { id: 6, title: "Composing", icon: <BsClipboardData />, delay: 0.6 },
   { id: 7, title: "IT Consultancy", icon: <BsClipboardData />, delay: 0.7 },
-  { id: 7, title: "24/7 Support", icon: <BiSupport />, delay: 0.8 },
+  { id: 8, title: "24/7 Support", icon: <BiSupport />, delay: 0.8 },
 ];
 
 const containerVariants = {
